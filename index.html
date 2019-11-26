@@ -50,6 +50,9 @@
                 Input the ℃ value you want to convert:
             </label>
 
+            Celsius: <input id="temp" type="number" placeholder="Enter the temperature" min="1" oninput="tempConverter(this.value)"
+                onchange="tempConverter(this.value)">
+
             <br />
 
             <p class=" green">This is equal to :<span id="output℉"></span><strong>℉</strong></p>
