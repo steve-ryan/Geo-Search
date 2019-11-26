@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  font-size: 18px;
+  background-color: green;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links, .logo {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+input[type="search"] {
+  color: skyblue;
+  text-align: right;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+  .x-menu>p {
+    font-size: 25em;
+    font-style: italic;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .logo:hover, .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.map {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height: 550px;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 350px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.conversion {
+    background: #01ee11;
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    color: darkolivegreen;
+    font-weight: bold;
+
+    }
+.convert {
+    margin: 20px;
+    padding: 6px;
+    border: 2px solid skyblue;
+    border-radius: 18px;
+    color: #55dfaa;
+    
+}
+#temp {
+    padding: 3px;
+    margin-left: 6px;
+}
+.center{
+  text-align: center;
+}
+.green{
+  color:green;
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
